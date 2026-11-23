@@ -1,0 +1,12 @@
+```python
+def predict(f):
+    approved = (
+        f["income_to_loan_ratio"] > 2.0
+        and f["debt_to_income"] < 0.40
+        and f["years_employed"] >= 2
+        and f["missed_payments_2y"] < 2
+    )
+    return 0.95 if approved else 0.05
+```
+
+REASONS: The function applies all four required conditions to raw feature values, preserving the exact boundary rules. It assumes clerical errors independently flip the rule-based decision with 5% probability. The other features and distribution statistics have no role in the stated decision rule.

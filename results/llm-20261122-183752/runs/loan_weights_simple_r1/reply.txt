@@ -1,0 +1,2 @@
+{"w":[1.2,-1.4,1.4,-1.0,0,0,0,0],"b":-0.3}
+REASONS: These are heuristic weights, without training data. Higher income and longer employment increase the score, while higher debt and missed payments decrease it. Irrelevant features receive zero weight. A single linear sigmoid cannot exactly represent the four-condition AND rule, because strong values on one feature can compensate for a failed condition elsewhere. These probabilities are therefore approximate and uncalibrated. The stated means, spreads, and clerical-error rate do not uniquely determine optimal weights.

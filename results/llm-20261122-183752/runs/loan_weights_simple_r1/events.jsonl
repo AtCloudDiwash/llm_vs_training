@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a205d8-0ec3-7542-9dd0-e5e8316f79df"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"w\":[1.2,-1.4,1.4,-1.0,0,0,0,0],\"b\":-0.3}\nREASONS: These are heuristic weights, without training data. Higher income and longer employment increase the score, while higher debt and missed payments decrease it. Irrelevant features receive zero weight. A single linear sigmoid cannot exactly represent the four-condition AND rule, because strong values on one feature can compensate for a failed condition elsewhere. These probabilities are therefore approximate and uncalibrated. The stated means, spreads, and clerical-error rate do not uniquely determine optimal weights."}}
+{"type":"turn.completed","usage":{"input_tokens":18199,"cached_input_tokens":17408,"cache_write_input_tokens":0,"output_tokens":643,"reasoning_output_tokens":508}}

@@ -1,0 +1,3 @@
+{"w":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"b":0}
+
+REASONS: Without feature meanings, labeled examples, or a known malignancy prevalence, neither feature effects nor the intercept can be estimated. Standardization provides scale information but no relationship to malignancy. These parameters produce 0.5 for every case, representing an explicit uncertainty baseline. This is not an empirically calibrated cancer probability.

@@ -1,0 +1,3 @@
+{"w":[1.0,-1.0,1.2,-1.0,0.0,0.0,0.0,0.0],"b":-1.0}
+
+REASONS: These are heuristic weights, with positive contributions from income and employment and negative contributions from debt and missed payments. Irrelevant features receive zero weight. Moderate magnitudes allow uncertainty from clerical errors. A single linear sigmoid cannot exactly represent the stated AND rule, since strong performance on one feature can compensate for failure on another. Without training data or a joint feature distribution, these weights cannot be uniquely determined or their calibration verified.

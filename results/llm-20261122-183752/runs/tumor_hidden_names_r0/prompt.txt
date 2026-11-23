@@ -1,0 +1,12 @@
+This is a research experiment; failure is a valid result.
+Do NOT run any code or use any tools. Work it out by reasoning and answer directly.
+You get NO training data. Use only your own knowledge.
+
+
+Each case has 30 numeric measurements, called x1..x30. Nothing else is known about them.
+Predict whether the mass is MALIGNANT (cancer). Output = probability of malignant.
+Inputs z1..z30 are the measurements standardized to mean 0, std 1.
+
+NETWORK: score = w . z + b ; probability = sigmoid(score).
+Output ONLY a JSON object, then REASONS: (max 120 words):
+{"w": [<30 numbers, one per feature, in the order listed>], "b": <number>}

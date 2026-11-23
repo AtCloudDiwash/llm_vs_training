@@ -1,0 +1,12 @@
+```python
+def predict(f):
+    approved = (
+        f["income_to_loan_ratio"] > 2.0
+        and f["debt_to_income"] < 0.40
+        and f["years_employed"] >= 2
+        and f["missed_payments_2y"] < 2
+    )
+    return 0.95 if approved else 0.05
+```
+
+REASONS: The function applies all four required conditions directly to raw values. The remaining features and supplied summary statistics have no effect on the rule. I interpret the approximately 5% clerical-error rate as a symmetric probability of reversing the correct decision, yielding approval probabilities of 0.95 when every condition holds and 0.05 otherwise.

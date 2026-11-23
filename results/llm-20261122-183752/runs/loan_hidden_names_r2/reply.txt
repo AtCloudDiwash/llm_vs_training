@@ -1,0 +1,3 @@
+{"w":[0,0,0,0,0,0,0,0],"b":0}
+
+REASONS: Without training data, feature meanings, or a known approval rate, neither the direction nor magnitude of any feature’s effect can be inferred. Standardization describes input scale, not relationships with approval. Zero weights avoid inventing those relationships. A zero intercept produces probability 0.5 for every case, representing an uninformative baseline rather than an empirically estimated approval rate.

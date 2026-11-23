@@ -1,0 +1,47 @@
+```python
+import math
+
+def predict(f):
+    def z(name, mean, std):
+        return (float(f[name]) - mean) / std
+
+    size = (
+        z("mean radius", 14.13, 3.669)
+        + z("worst radius", 16.32, 5.086)
+        + z("worst perimeter", 107.7, 35.41)
+    ) / 3.0
+
+    concave_points = (
+        z("mean concave points", 0.05033, 0.04047)
+        + z("worst concave points", 0.1163, 0.06769)
+    ) / 2.0
+
+    concavity = (
+        z("mean concavity", 0.09236, 0.08349)
+        + z("worst concavity", 0.2785, 0.2172)
+    ) / 2.0
+
+    texture = (
+        z("mean texture", 19.37, 4.303)
+        + z("worst texture", 25.82, 6.214)
+    ) / 2.0
+
+    score = (
+        -0.55
+        + 2.20 * size
+        + 1.80 * concave_points
+        + 0.55 * concavity
+        + 0.85 * texture
+        + 0.40 * z("worst smoothness", 0.1334, 0.02325)
+        + 0.45 * z("radius error", 0.4165, 0.2979)
+        + 0.20 * z("worst symmetry", 0.2901, 0.06413)
+    )
+
+    if score >= 0.0:
+        return 1.0 / (1.0 + math.exp(-score))
+    exp_score = math.exp(score)
+    return exp_score / (1.0 + exp_score)
+```
+
+REASONS:
+Larger nuclei, greater concavity, more concave points, and higher texture variation support malignancy. The heuristic emphasizes size and concave points, with smaller contributions from texture, smoothness, size variability, and symmetry. Averaging correlated measurements reduces redundant contributions. Standardization uses the supplied population statistics. All weights and the intercept are judgment-based. The sigmoid produces a probability estimate whose calibration and predictive accuracy remain unverified without labeled data.

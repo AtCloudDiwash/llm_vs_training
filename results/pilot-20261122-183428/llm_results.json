@@ -1,0 +1,13 @@
+[
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 13.2,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 97.07602339181285,
+  "auc": 0.998076353950873
+ }
+]

@@ -1,0 +1,405 @@
+[
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 14.7,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 96.49122807017544,
+  "auc": 0.997484462858834
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_small",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 21.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 93.56725146198829,
+  "auc": 0.9834270494229063
+ },
+ {
+  "task": "tumor",
+  "condition": "hidden_names",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 8.2,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 63.74269005847953,
+  "auc": 0.5
+ },
+ {
+  "task": "tumor",
+  "condition": "python_rule",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 21.5,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.15204678362574,
+  "auc": 0.9878662326131992
+ },
+ {
+  "task": "loan",
+  "condition": "weights_simple",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 33.2,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 73.66666666666667,
+  "auc": 0.773782031491201
+ },
+ {
+  "task": "loan",
+  "condition": "weights_small",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 27.3,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 93.83333333333333,
+  "auc": 0.9172028403828342
+ },
+ {
+  "task": "loan",
+  "condition": "python_rule",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 6.1,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.16666666666667,
+  "auc": 0.9228465575794998
+ },
+ {
+  "task": "loan",
+  "condition": "hidden_names",
+  "repeat": 0,
+  "valid": true,
+  "seconds": 7.7,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 65.83333333333333,
+  "auc": 0.5
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 18.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 96.49122807017544,
+  "auc": 0.9955608168097071
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_small",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 24.1,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.73684210526315,
+  "auc": 0.9949689257176679
+ },
+ {
+  "task": "tumor",
+  "condition": "hidden_names",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 7.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 63.74269005847953,
+  "auc": 0.5
+ },
+ {
+  "task": "tumor",
+  "condition": "python_rule",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 23.6,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 95.32163742690058,
+  "auc": 0.9933412252145606
+ },
+ {
+  "task": "loan",
+  "condition": "weights_simple",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 27.2,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 69.66666666666667,
+  "auc": 0.772028403828342
+ },
+ {
+  "task": "loan",
+  "condition": "weights_small",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 25.0,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.0,
+  "auc": 0.9205742513121333
+ },
+ {
+  "task": "loan",
+  "condition": "python_rule",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 7.7,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.16666666666667,
+  "auc": 0.9228465575794998
+ },
+ {
+  "task": "loan",
+  "condition": "hidden_names",
+  "repeat": 1,
+  "valid": true,
+  "seconds": 7.1,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 65.83333333333333,
+  "auc": 0.5
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 15.8,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 97.07602339181285,
+  "auc": 0.9971885173128145
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_small",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 21.1,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 96.49122807017544,
+  "auc": 0.9963006806747559
+ },
+ {
+  "task": "tumor",
+  "condition": "python_rule",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 16.5,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 95.90643274853801,
+  "auc": 0.9902337969813555
+ },
+ {
+  "task": "tumor",
+  "condition": "hidden_names",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 15.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 63.74269005847953,
+  "auc": 0.5
+ },
+ {
+  "task": "loan",
+  "condition": "weights_simple",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 25.1,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 71.66666666666667,
+  "auc": 0.7654584748379131
+ },
+ {
+  "task": "loan",
+  "condition": "python_rule",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 10.5,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.16666666666667,
+  "auc": 0.9228465575794998
+ },
+ {
+  "task": "loan",
+  "condition": "weights_small",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 26.7,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.16666666666667,
+  "auc": 0.9165174436554493
+ },
+ {
+  "task": "loan",
+  "condition": "hidden_names",
+  "repeat": 2,
+  "valid": true,
+  "seconds": 11.0,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 65.83333333333333,
+  "auc": 0.5
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 19.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 98.24561403508771,
+  "auc": 0.9988162178159219
+ },
+ {
+  "task": "tumor",
+  "condition": "python_rule",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 18.5,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 96.49122807017544,
+  "auc": 0.995560816809707
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_small",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 28.5,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 96.49122807017544,
+  "auc": 0.9945250073986387
+ },
+ {
+  "task": "tumor",
+  "condition": "hidden_names",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 8.7,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 63.74269005847953,
+  "auc": 0.5
+ },
+ {
+  "task": "loan",
+  "condition": "weights_simple",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 19.4,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 70.5,
+  "auc": 0.771065143562828
+ },
+ {
+  "task": "loan",
+  "condition": "python_rule",
+  "repeat": 3,
+  "valid": false,
+  "seconds": 1.5,
+  "tools_used": 0,
+  "tools": [],
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "hidden_names",
+  "repeat": 3,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_simple",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "tumor",
+  "condition": "weights_small",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "tumor",
+  "condition": "python_rule",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "tumor",
+  "condition": "hidden_names",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "weights_simple",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "weights_small",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "python_rule",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "hidden_names",
+  "repeat": 4,
+  "valid": false,
+  "skipped": "usage limit"
+ },
+ {
+  "task": "loan",
+  "condition": "weights_small",
+  "repeat": 3,
+  "valid": true,
+  "seconds": 22.2,
+  "tools_used": 0,
+  "tools": [],
+  "acc": 94.0,
+  "auc": 0.9222167335597407
+ }
+]

@@ -1,0 +1,12 @@
+This is a research experiment; failure is a valid result.
+Do NOT run any code or use any tools. Work it out by reasoning and answer directly.
+You get NO training data. Use only your own knowledge.
+
+
+Each case has 8 numeric measurements, called x1..x8. Nothing else is known about them.
+Predict whether the loan is APPROVED. Output = probability of approval.
+Inputs z1..z8 are the measurements standardized to mean 0, std 1.
+
+NETWORK: score = w . z + b ; probability = sigmoid(score).
+Output ONLY a JSON object, then REASONS: (max 120 words):
+{"w": [<8 numbers, one per feature, in the order listed>], "b": <number>}

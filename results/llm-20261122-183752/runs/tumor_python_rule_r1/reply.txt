@@ -1,0 +1,30 @@
+```python
+import math
+
+def predict(f):
+    # Hand-selected heuristic weights on standardized features.
+    terms = (
+        ("mean radius", 14.13, 3.669, 0.65),
+        ("mean texture", 19.37, 4.303, 0.40),
+        ("mean concavity", 0.09236, 0.08349, 0.40),
+        ("mean concave points", 0.05033, 0.04047, 1.10),
+        ("radius error", 0.4165, 0.2979, 0.55),
+        ("worst radius", 16.32, 5.086, 1.65),
+        ("worst texture", 25.82, 6.214, 0.65),
+        ("worst smoothness", 0.1334, 0.02325, 0.40),
+        ("worst concavity", 0.2785, 0.2172, 0.45),
+        ("worst concave points", 0.1163, 0.06769, 1.45),
+        ("worst symmetry", 0.2901, 0.06413, 0.30),
+    )
+
+    score = -0.55
+    for name, mean, std, weight in terms:
+        score += weight * (float(f[name]) - mean) / std
+
+    if score >= 0.0:
+        return 1.0 / (1.0 + math.exp(-score))
+    exp_score = math.exp(score)
+    return exp_score / (1.0 + exp_score)
+```
+
+REASONS: Larger nuclei, pronounced concavity, and more concave points receive the greatest weight. Texture, size variability, smoothness, and symmetry provide additional evidence. Standardization uses the supplied averages and spreads. Perimeter and area are omitted because they strongly overlap with radius. The intercept and weights are hand-selected assumptions. The sigmoid produces a probability estimate, but its calibration and predictive accuracy are unverified without labeled data.

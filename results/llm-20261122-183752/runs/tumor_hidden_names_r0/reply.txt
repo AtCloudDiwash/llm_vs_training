@@ -1,0 +1,3 @@
+{"w":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"b":0}
+
+REASONS: Feature meanings, outcome relationships, and malignancy prevalence are unknown. Standardization provides no information about how features predict malignancy. Zero weights avoid inventing those relationships. A zero intercept yields a constant probability of 0.5, reflecting an assumed equal prior. This baseline has no demonstrated predictive accuracy or calibration.

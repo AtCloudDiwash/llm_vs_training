@@ -1,0 +1,12 @@
+```python
+def predict(f):
+    approved = (
+        f["income_to_loan_ratio"] > 2.0
+        and f["debt_to_income"] < 0.40
+        and f["years_employed"] >= 2
+        and f["missed_payments_2y"] < 2
+    )
+    return 0.95 if approved else 0.05
+```
+
+REASONS: Applies the stated thresholds directly to raw values. Only the four decision features affect the prediction. Assumes clerical errors independently reverse the rule-based decision with probability 5%, yielding approval probabilities of 0.95 and 0.05.

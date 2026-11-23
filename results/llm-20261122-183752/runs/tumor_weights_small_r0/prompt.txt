@@ -1,0 +1,45 @@
+This is a research experiment; failure is a valid result.
+Do NOT run any code or use any tools. Work it out by reasoning and answer directly.
+You get NO training data. Use only your own knowledge.
+
+
+Each case is a breast mass. A fine-needle aspirate was imaged and 10 properties of the cell nuclei were measured: radius, texture (variation in gray level), perimeter, area, smoothness (local variation in radius), compactness (perimeter^2/area - 1), concavity (severity of concave parts of the contour), concave points (number of concave portions), symmetry, and fractal dimension. For each property there are 3 features: 'mean' (average over the nuclei), 'error' (standard error), and 'worst' (mean of the three largest values).
+
+Predict whether the mass is MALIGNANT (cancer). Output = probability of malignant.
+
+FEATURES (in order), with their average and spread:
+1. mean radius  (mean 14.13, std 3.669)
+2. mean texture  (mean 19.37, std 4.303)
+3. mean perimeter  (mean 92.07, std 25.33)
+4. mean area  (mean 658.1, std 372.1)
+5. mean smoothness  (mean 0.09732, std 0.01442)
+6. mean compactness  (mean 0.1076, std 0.05555)
+7. mean concavity  (mean 0.09236, std 0.08349)
+8. mean concave points  (mean 0.05033, std 0.04047)
+9. mean symmetry  (mean 0.1817, std 0.02874)
+10. mean fractal dimension  (mean 0.06329, std 0.007283)
+11. radius error  (mean 0.4165, std 0.2979)
+12. texture error  (mean 1.236, std 0.5459)
+13. perimeter error  (mean 2.946, std 2.17)
+14. area error  (mean 42.13, std 50.22)
+15. smoothness error  (mean 0.007099, std 0.003022)
+16. compactness error  (mean 0.02626, std 0.01823)
+17. concavity error  (mean 0.0324, std 0.03022)
+18. concave points error  (mean 0.01196, std 0.006238)
+19. symmetry error  (mean 0.02055, std 0.008224)
+20. fractal dimension error  (mean 0.003865, std 0.002558)
+21. worst radius  (mean 16.32, std 5.086)
+22. worst texture  (mean 25.82, std 6.214)
+23. worst perimeter  (mean 107.7, std 35.41)
+24. worst area  (mean 892.9, std 610.8)
+25. worst smoothness  (mean 0.1334, std 0.02325)
+26. worst compactness  (mean 0.262, std 0.1678)
+27. worst concavity  (mean 0.2785, std 0.2172)
+28. worst concave points  (mean 0.1163, std 0.06769)
+29. worst symmetry  (mean 0.2901, std 0.06413)
+30. worst fractal dimension  (mean 0.0851, std 0.01922)
+
+Inputs: z_i = (raw_i - mean_i) / std_i for the 30 features above.
+NETWORK: h = relu(W1 z + b1) with 8 hidden neurons; score = w2 . h + b2 ; probability = sigmoid(score).
+Output ONLY a JSON object, then REASONS: (max 120 words):
+{"W1": [<8 lists of 30 numbers>], "b1": [<8 numbers>], "w2": [<8 numbers>], "b2": <number>}

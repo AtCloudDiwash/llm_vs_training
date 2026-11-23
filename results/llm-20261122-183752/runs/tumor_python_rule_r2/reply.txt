@@ -1,0 +1,30 @@
+```python
+import math
+
+
+def predict(f):
+    terms = (
+        ("worst radius", 16.32, 5.086, 1.35),
+        ("worst texture", 25.82, 6.214, 0.65),
+        ("worst concave points", 0.1163, 0.06769, 1.65),
+        ("mean concave points", 0.05033, 0.04047, 0.70),
+        ("radius error", 0.4165, 0.2979, 0.50),
+        ("worst smoothness", 0.1334, 0.02325, 0.35),
+        ("worst concavity", 0.2785, 0.2172, 0.35),
+        ("worst symmetry", 0.2901, 0.06413, 0.20),
+    )
+
+    score = -0.55
+    for name, mean, std, weight in terms:
+        value = float(f[name])
+        if not math.isfinite(value):
+            raise ValueError(f"{name} must be finite")
+        score += weight * (value - mean) / std
+
+    if score >= 0.0:
+        return 1.0 / (1.0 + math.exp(-score))
+    exp_score = math.exp(score)
+    return exp_score / (1.0 + exp_score)
+```
+
+REASONS: This is an untrained heuristic using the supplied means and spreads. Larger nuclei, greater concavity, more concave points, and heterogeneous texture increase the score. Radius and concave points receive the greatest weights. Omitting perimeter and area reduces repeated weighting of closely related size measurements. The intercept and weights are judgment-based. The sigmoid produces a probability-shaped estimate whose calibration and predictive accuracy are unverified.

@@ -1,0 +1,3 @@
+{"w":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"b":0}
+
+REASONS: Standardization specifies each feature’s scale but provides no information about its relationship to malignancy. Feature meanings, labeled examples, and malignancy prevalence are unknown, so assigning predictive weights would require unsupported assumptions. Zero weights and a zero intercept yield 0.5 for every case, expressing an explicit equal-probability assumption. This baseline has no established predictive accuracy or clinical calibration.

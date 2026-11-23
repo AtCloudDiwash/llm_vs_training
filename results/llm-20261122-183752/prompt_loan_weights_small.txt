@@ -1,0 +1,33 @@
+This is a research experiment; failure is a valid result.
+Do NOT run any code or use any tools. Work it out by reasoning and answer directly.
+You get NO training data. Use only your own knowledge.
+
+
+Each case is a loan applicant. Features:
+- income_to_loan_ratio: yearly income divided by the loan amount
+- debt_to_income: monthly debt payments divided by monthly income (0.35 = 35%)
+- years_employed: years at the current job
+- missed_payments_2y: number of missed loan/credit-card payments in the last 2 years
+- credit_history_years: years since the applicant's first credit account
+- age: age in years
+- num_dependents: number of children or other dependents
+- savings_k: savings in thousands of dollars
+
+RULE: The bank approves a loan only if ALL of these hold: income_to_loan_ratio is above 2.0, debt_to_income is below 0.40, years_employed is at least 2, and missed_payments_2y is below 2. Otherwise it rejects. The other features play no role in the decision. About 5% of decisions are random clerical errors.
+
+Predict whether the loan is APPROVED. Output = probability of approval.
+
+FEATURES (in order), with their average and spread:
+1. income_to_loan_ratio  (mean 2.874, std 1.382)
+2. debt_to_income  (mean 0.3243, std 0.1198)
+3. years_employed  (mean 4.081, std 4.174)
+4. missed_payments_2y  (mean 0.6257, std 0.8106)
+5. credit_history_years  (mean 9.772, std 5.758)
+6. age  (mean 40.26, std 11.52)
+7. num_dependents  (mean 1.153, std 1.043)
+8. savings_k  (mean 23.9, std 28.03)
+
+Inputs: z_i = (raw_i - mean_i) / std_i for the 8 features above.
+NETWORK: h = relu(W1 z + b1) with 8 hidden neurons; score = w2 . h + b2 ; probability = sigmoid(score).
+Output ONLY a JSON object, then REASONS: (max 120 words):
+{"W1": [<8 lists of 8 numbers>], "b1": [<8 numbers>], "w2": [<8 numbers>], "b2": <number>}

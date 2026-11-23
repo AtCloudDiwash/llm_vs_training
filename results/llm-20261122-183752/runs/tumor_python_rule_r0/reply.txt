@@ -1,0 +1,27 @@
+```python
+import math
+
+def predict(f):
+    terms = (
+        ("worst radius",         16.32,  5.086,   1.50),
+        ("mean concave points",   0.05033, 0.04047, 1.10),
+        ("worst concave points",  0.1163,  0.06769, 1.10),
+        ("worst concavity",       0.2785,  0.2172,  0.65),
+        ("worst texture",        25.82,   6.214,   0.65),
+        ("radius error",          0.4165,  0.2979,  0.50),
+        ("worst smoothness",      0.1334,  0.02325, 0.35),
+        ("worst symmetry",        0.2901,  0.06413, 0.30),
+        ("worst compactness",     0.262,   0.1678,  0.25),
+    )
+
+    score = -0.65
+    for name, mean, std, weight in terms:
+        score += weight * (float(f[name]) - mean) / std
+
+    if score >= 0.0:
+        return 1.0 / (1.0 + math.exp(-score))
+    exp_score = math.exp(score)
+    return exp_score / (1.0 + exp_score)
+```
+
+REASONS: Larger nuclei, pronounced concavity, more concave points, heterogeneous texture, and greater size variation support malignancy. The function standardizes using the supplied statistics and emphasizes size and contour irregularity. Omitting perimeter and area reduces redundant size contributions. The intercept and weights are judgment-based, with no fitting or execution. The sigmoid produces a heuristic probability whose calibration and predictive accuracy remain unverified.

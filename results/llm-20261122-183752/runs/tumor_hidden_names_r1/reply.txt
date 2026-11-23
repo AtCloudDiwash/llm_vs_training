@@ -1,0 +1,3 @@
+{"w":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"b":0}
+
+REASONS: Feature meanings, associations with malignancy, and disease prevalence are unknown. Standardization alone provides no predictive information. Zero weights avoid inventing feature effects. A zero intercept yields 0.5 for every case, expressing an uninformative baseline. This probability is not empirically calibrated and has no established diagnostic validity.

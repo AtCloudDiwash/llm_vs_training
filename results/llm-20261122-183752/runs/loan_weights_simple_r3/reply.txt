@@ -1,0 +1,2 @@
+{"w":[1.5,-1.5,1.5,-1.0,0,0,0,0],"b":-0.5}
+REASONS: These heuristic weights increase approval probability with income and employment and decrease it with debt and missed payments. Irrelevant features receive zero weight. The negative intercept reflects the requirement to satisfy all four conditions. A single linear sigmoid approximates this rule imperfectly because strong features can compensate for a failed condition. These coefficients are uncalibrated, and the model cannot enforce a fixed 5% clerical-error probability across all inputs.
